@@ -1,7 +1,8 @@
+require('dotenv').config();
 const Sequelize = require('sequelize');
 const config = require('../../config').db;
 
-const sequelize = new Sequelize(config.name, config.user, config.pass, config.opts);
+const sequelize = new Sequelize(process.env.DATABASE_URL, config.opts);
 
 sequelize.sync();
 sequelize

@@ -3,12 +3,7 @@
   "views": "views",
   "public": "/dist",
   "db": {
-    "name": "hm5",
-    "user": "postgres",
-    "pass": "",
     "opts": {
-      "host": "localhost",
-      "port": "5435",
       "dialect": "postgres",
       "pool": {
         "max": 5,
