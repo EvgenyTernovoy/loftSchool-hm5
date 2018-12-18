@@ -1,0 +1,25 @@
+{
+  "port": "8085",
+  "views": "views",
+  "public": "/dist",
+  "db": {
+    "name": "hm5",
+    "user": "postgres",
+    "pass": "",
+    "opts": {
+      "host": "localhost",
+      "port": "5435",
+      "dialect": "postgres",
+      "pool": {
+        "max": 5,
+        "min": 0,
+        "acquire": 30000,
+        "idle": 10000
+      }
+    }
+  },
+  "upload": {
+    "path": "/dist/upload",
+    "file": "upload"
+  }
+}
